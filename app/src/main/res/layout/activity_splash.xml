@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fmlProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/splashscreen_vendor"
+            android:scaleType="fitXY"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/llAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".3"
+            android:orientation="vertical"></LinearLayout>
+
+
+        <!-- <TextView
+             android:id="@+id/tvDesc1"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="8dp"
+             android:layout_marginBottom="8dp"
+             android:gravity="bottom|center_horizontal"
+             android:text="@string/splash"
+             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+             android:textColor="@color/White"
+             android:textStyle="bold"/>-->
+
+        <!--  <TextView
+              android:id="@+id/tvDesc2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom"
+              android:layout_marginBottom="20dp"
+              android:layout_marginLeft="52dp"
+              android:padding="8dp"
+              android:text="Sponsored by"
+              android:textColor="@color/White"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:id="@+id/tvDesc3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom|right"
+              android:layout_marginBottom="20dp"
+              android:padding="8dp"
+              android:text="Rotary club , Reliance"
+              android:textColor="@color/light_blue_600"
+              android:textSize="18sp"
+              android:textStyle="bold" />-->
+
+
+    </FrameLayout>
+
+
+    <!--  <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/thal_app" />
+  -->
+</LinearLayout>

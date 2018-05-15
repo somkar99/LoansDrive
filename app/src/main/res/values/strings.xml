@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">LoanDriveDemo</string>
+
+    <string-array name="collateral">
+        <item>Select</item>
+        <item>Rashmi</item>
+        <item>Raj</item>
+        <item>Vinay</item>
+        <item>Rishabh</item>
+        <item>Omkar</item>
+
+    </string-array>
+    <string name="prompt">
+        Collateral
+    </string>
+
+
+    <string-array name="Address">
+        <item>Select</item>
+        <item>Dadar</item>
+        <item>Chembur</item>
+        <item>Govandi</item>
+        <item>Lalbaug</item>
+        <item>Parel</item>
+
+    </string-array>
+
+    <string-array name="Yesno">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="maritalstatus">
+        <item>Select</item>
+        <item>Single</item>
+        <item>Married</item>
+    </string-array>
+
+    <string-array name="typeofloan">
+        <item>Select</item>
+        <item>Home Loan</item>
+        <item>Loan against Property</item>
+        <item>Balance transfer of home loan or loan against property</item>
+    </string-array>
+    <string-array name="purposeofloan">
+        <item>Select</item>
+        <item>Purchased an identifed property</item>
+        <item>Pre Sanction for identifying property later</item>
+    </string-array>
+    <string-array name="propertydetails">
+        <item>Select</item>
+        <item>Loan for construction on your own</item>
+        <item>Already built home/flat</item>
+        <item>Home/flat under construction by builder</item>
+    </string-array>
+
+    <string-array name="occupation">
+        <item>Salaried</item>
+        <item>Self Employed</item>
+
+
+    </string-array>
+
+
+</resources>

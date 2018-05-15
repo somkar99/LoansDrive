@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2d3e50</color>
+    <color name="colorPrimaryDark">#2d3e50</color>
+    <color name="colorAccent">#1bbc9b</color>
+    <color name="transparent">#20FFFFFF</color>
+    <color name="transparent1">#40FFFFFF</color>
+    <color name="White">#FFFFFF</color>
+    <color name="textcolor">#8d9ba8</color>
+    <color name="black">#100f0f</color>
+    <color name ="SATitleBackground">#4e9ce4</color>
+    <color name="button">#05ccad</color>
+    <color name="background">#0a7d84</color>
+    <color name="gradient_start">#04c9ad</color>
+    <color name="gradient_end">#0e8796</color>
+    <color name="gray_hintcolor">#dcc9c9</color>
+    <color name="lightgrey">#f5f5f5</color>
+    <color name="lightgreen1">#1bbc9b</color>
+    <color name="lightgreen">#2fc69c</color>
+    <color name="gray">#8d9ba8</color>
+    <color name="bgcolor">#e3f7f8</color>
+    <color name="button1">#069797</color>
+    <color name="toolbar">#01abab</color>
+    <color name="piechart1">#fc8e59</color>
+    <color name="piechart2">#fcffa7</color>
+    <color name="red">#ff958d</color>
+    <color name="bggray">#F5F5F5</color>
+    <color name="newblue">#a6acff</color>
+    <color name="pendingorg">#fec888</color>
+    <color name="completered">#ff958d</color>
+    <color name="textheading">#1a436c</color>
+    <color name="textgray">#676d72</color>
+
+<color name="smokewhite">#F5F5F5</color>
+
+
+
+</resources>

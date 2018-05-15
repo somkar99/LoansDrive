@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/pendingorg"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/tvdate1"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="24"
+                        android:textStyle="bold"
+                        android:textSize="30sp"/>
+                    <TextView
+                        android:id="@+id/tvmonth1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="sep"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/tvyear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="2017"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Borrower :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Omkar Shinde"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+
+                        android:text="Loan Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs. 5,00,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Address :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Lalbaug"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Loan A/c :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="809775513987654"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Collection Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs.30,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Property Details :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Dadar "/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/pendingorg"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/tvdate2"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="24"
+                        android:textStyle="bold"
+                        android:textSize="30sp"/>
+                    <TextView
+                        android:id="@+id/tvmonth2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="sep"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/tvyear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="2017"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Borrower :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Omkar Shinde"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+
+                        android:text="Loan Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs. 5,00,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Address :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Lalbaug"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Loan A/c :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="809775513987654"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Collection Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs.30,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Property Details :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Dadar "/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/pendingorg"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/tvdate3"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="24"
+                        android:textStyle="bold"
+                        android:textSize="30sp"/>
+                    <TextView
+                        android:id="@+id/tvmonth3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="sep"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/tvyear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="2017"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Borrower :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Omkar Shinde"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+
+                        android:text="Loan Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs. 5,00,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Address :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Lalbaug"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Loan A/c :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="809775513987654"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Collection Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs.30,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Property Details :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Dadar "/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/pendingorg"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/tvdate4"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="24"
+                        android:textStyle="bold"
+                        android:textSize="30sp"/>
+                    <TextView
+                        android:id="@+id/tvmonth4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="sep"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/tvyear4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="2017"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Borrower :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Omkar Shinde"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+
+                        android:text="Loan Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs. 5,00,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Address :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Lalbaug"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Loan A/c :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="809775513987654"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Collection Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs.30,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Property Details :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Dadar "/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/pendingorg"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/tvdate"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="24"
+                        android:textStyle="bold"
+                        android:textSize="30sp"/>
+                    <TextView
+                        android:id="@+id/tvmonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="sep"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/tvyear"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="2017"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Borrower :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Omkar Shinde"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+
+                        android:text="Loan Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs. 5,00,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Address :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Lalbaug"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:paddingLeft="5dp"
+                    android:background="@color/bggray"
+                    android:paddingTop="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Loan A/c :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="809775513987654"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Collection Amount :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Rs.30,000"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:text="Property Details :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="Dadar "/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

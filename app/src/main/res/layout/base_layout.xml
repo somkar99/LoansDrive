@@ -1,0 +1,711 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/llHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/White"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/app_heading"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:background="@color/toolbar">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="48dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_menu"
+                    android:tint="@color/White" />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="65dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:padding="16dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/back"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvActivityTitle"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="Home"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/White"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/icon"
+                    android:layout_toRightOf="@+id/icon" />
+
+                <!-- <TextView
+                    android:id="@+id/tvCompany"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/back"
+                    android:singleLine="true"
+                    android:text="BNI Connect"
+                    android:textColor="@color/White"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />-->
+
+
+                <ImageView
+                    android:id="@+id/ivLogout"
+                    android:layout_width="30dp"
+                    android:tint="@color/White"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logout_icon"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <ImageView
+                    android:id="@+id/ivNotification"
+                    android:layout_width="30dp"
+                    android:padding="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/notification"
+                    android:layout_toLeftOf="@id/ivLogout"
+                    android:tint="@color/White" />
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/baseLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <!--bottom navigation-->
+        <LinearLayout
+            android:id="@+id/llbottom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            android:baselineAligned="true"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/llfaqs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8"
+                    android:padding="4dp"
+                    android:src="@drawable/faqs"
+                    android:tint="@color/White" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="FAQS"
+                    android:textColor="@color/lightgrey" />
+            </LinearLayout>
+
+            <!--
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgrey"></View>
+            -->
+
+
+            <LinearLayout
+                android:id="@+id/lloffers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:padding="4dp"
+                    android:src="@drawable/offfe"
+                    android:tint="@color/White" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Offers"
+                    android:textColor="@color/White" />
+            </LinearLayout>
+
+
+            <!--
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightgrey"></View>
+            -->
+
+            <LinearLayout
+                android:id="@+id/llprofile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:padding="4dp"
+                    android:src="@drawable/profile_iconvendor"
+                    android:tint="@color/White" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="My Profile"
+                    android:textColor="@color/White" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Bottom navigation end-->
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/leftMenu"
+        android:layout_width="280dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:paddingBottom="8dp"
+            android:background="@color/toolbar"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:background="@color/toolbar"
+                android:padding="8dp"
+                android:src="@drawable/close_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/toolbar"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="5dp"
+                    android:tint="@color/colorPrimaryDark"
+                    android:layout_gravity="center"
+                    android:src="@drawable/loandrive_logo" />
+
+               <!-- <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/White"
+                    android:textSize="16sp" />-->
+            </LinearLayout>
+        </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerAboutUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/about_us_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="About us"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerOffers"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/offers_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="Offers"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerFAQS"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/faqs_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="FAQ's"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerAccountSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/acct_summary_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="Account Summary"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llDrawerEnhancement"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_margin="4dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="1">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.2"-->
+                        <!--android:padding="4dp"-->
+                        <!--android:src="@drawable/enhance_eligibility_icon"-->
+                        <!--android:tint="@color/colorPrimaryDark" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.8"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingLeft="4dp"-->
+                        <!--android:text="Enhancement Eligibility"-->
+                        <!--android:textSize="16sp" />-->
+                <!--</LinearLayout>-->
+
+               <!-- <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>-->
+
+                <LinearLayout
+                    android:id="@+id/llDrawerAmountChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/amt_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="Amount Chart"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerEMIPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/emi_payment_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="EMI Payment"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerEMIAlert"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/emi_alert_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="EMI Alert"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerStatement"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/requirement_statmt_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="Statement"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerTaxCertification"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/req_tax_certificatn_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="Tax Certificate"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/chang_passwrd_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="Change Password"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/llDrawerSignOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:padding="4dp"
+                        android:src="@drawable/logout_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="Signout"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"></View>
+
+                <!-- <android.support.v7.widget.RecyclerView
+                       android:id="@+id/rcvDrawerMenu"
+                       android:layout_width="fill_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight=".99"
+                       android:paddingBottom="5dp" />-->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

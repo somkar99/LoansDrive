@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    android:weightSum="10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9.99">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_weight="10">
+
+            <LinearLayout
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/toolbar"></View>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="700dp"
+                    android:background="@color/bgcolor"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/dashboardbg"
+                        android:elevation="10dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".4"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="DASHBOARD"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingLeft="20dp"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="TRUST CODE:"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvtrustcode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:text="D1A7" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="LOAN TYPE:"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvloantype"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Business Laon" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingLeft="20dp"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="ACCOUNT NO:"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvaccno"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="1"
+                                    android:text="01159000000152" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="ACCOUNT TYPE:"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvacctype"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="EMI Ledger" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="9"
+                        android:background="@drawable/dashboardbg"
+                        android:elevation="10dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            ></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"></View>
+
+                            <LinearLayout
+                                android:id="@+id/llColateral"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:orientation="vertical"
+                                android:weightSum="9">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight="7"
+                                    android:background="@drawable/callateral" />
+
+                                <TextView
+                                    android:id="@+id/tvColateral"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.5"
+                                    android:textColor="@color/gray"
+                                    android:gravity="bottom"
+                                    android:text="COLLATERAL"
+                                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                                <View
+                                    android:id="@+id/gviewcoll"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:background="@color/button1"
+                                    android:layout_marginRight="24dp"
+                                    android:layout_weight=".5"></View>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llValuer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:orientation="vertical"
+                                android:weightSum="9">
+
+                                <ImageView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_weight="7"
+                                    android:background="@drawable/valuer" />
+
+                                <TextView
+                                    android:id="@+id/tvValuer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_weight="1.5"
+                                    android:textColor="@color/gray"
+                                    android:gravity="bottom|center_horizontal"
+                                    android:text="VALUER"
+                                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                                <View
+                                    android:id="@+id/gviewval"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="24dp"
+                                    android:background="@color/button1"
+                                    android:layout_weight=".5"></View>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"></View>
+                        </LinearLayout>
+
+                        <!--   Collateral  -->
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fillViewport="true">
+
+                        <LinearLayout
+                            android:id="@+id/llcolateral"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_marginRight="10dp"
+                            android:visibility="gone"
+                            android:background="@color/bggray"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:text="Collateral"
+                                android:textSize="12sp"
+                                android:textColor="@color/background"
+                                android:gravity="bottom"/>
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp">
+                            <Spinner
+                                android:id="@+id/spIndustry"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/collateral">
+                                </Spinner>
+                            </android.support.v7.widget.CardView>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:text="Address"
+                                android:textSize="12sp"
+                                android:textColor="@color/background"
+                                android:gravity="bottom"/>
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp">
+                            <Spinner
+                                android:id="@+id/lscoladdress"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:entries="@array/Address">
+
+                            </Spinner>
+                            </android.support.v7.widget.CardView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="140dp"
+                                    android:layout_height="match_parent"
+                                    android:textColorHint="@color/background">
+                                    <EditText
+
+                                        android:id="@+id/etcollandarea"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:hint="Land Area"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginBottom="3dp">
+                                <Spinner
+
+                                    android:id="@+id/lscollandarea"
+                                    android:layout_width="170dp"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/Address">
+
+                                </Spinner>
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColorHint="@color/background">
+                                <EditText
+                                    android:id="@+id/etcolrate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Rate "/>
+
+                            </android.support.design.widget.TextInputLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="140dp"
+                                    android:layout_height="match_parent"
+                                    android:textColorHint="@color/background">
+                                    <EditText
+                                        android:id="@+id/etcolconstarea"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:hint="Const/Flat Area"/>
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    app:cardCornerRadius="4dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginBottom="3dp">
+                                <Spinner
+                                    android:id="@+id/lscolconstarea"
+                                    android:layout_width="170dp"
+                                    android:layout_height="match_parent"
+
+                                    android:entries="@array/Address">
+
+                                </Spinner>
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColorHint="@color/background">
+                                <EditText
+                                    android:id="@+id/etcolrate2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Rate "/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColorHint="@color/background">
+                                <EditText
+                                    android:id="@+id/etcolmarketvalue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Market Value "/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:textColorHint="@color/background">
+                                <EditText
+                                    android:id="@+id/etrolreailzablevalue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Realizable Value "/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/et"
+                                        android:layout_width="150dp"
+                                        android:layout_height="match_parent"
+                                        android:textSize="16sp"
+                                        android:text="Margin"/>
+
+
+                                    <TextView
+                                        android:id="@+id/ete"
+                                        android:layout_width="150dp"
+                                        android:layout_height="match_parent"
+                                        android:textSize="16sp"
+                                        android:text="(RV/MV)*100"
+                                        >
+
+                                    </TextView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        </ScrollView>
+                        <!--   Valuer  -->
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fillViewport="true">
+                        <LinearLayout
+                            android:id="@+id/llvaluer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/bggray"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:text="Valuer"
+                                android:textSize="12sp"
+                                android:textColor="@color/background"
+                                android:gravity="bottom"/>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp">
+                            <Spinner
+                                android:id="@+id/lsvaluer"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:entries="@array/collateral">
+
+                            </Spinner>
+                            </android.support.v7.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:text="Valuer Type"
+                                android:textSize="12sp"
+                                android:textColor="@color/background"
+                                android:gravity="bottom"/>
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp">
+                            <Spinner
+                                android:id="@+id/lsvaltype"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:entries="@array/Address">
+
+                            </Spinner>
+                            </android.support.v7.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:text="Valuer Priority"
+                                android:textSize="12sp"
+                                android:textColor="@color/background"
+                                android:gravity="bottom"/>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp">
+                            <Spinner
+                                android:id="@+id/lsvalpriority"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:entries="@array/Address">
+
+                            </Spinner>
+                            </android.support.v7.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:text="Status"
+                                android:textSize="12sp"
+                                android:textColor="@color/background"
+                                android:gravity="bottom"/>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp">
+                            <Spinner
+                                android:id="@+id/lsvalstatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:entries="@array/Address">
+
+                            </Spinner>
+                            </android.support.v7.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:text="Status of Construction"
+                                android:textSize="12sp"
+                                android:textColor="@color/background"
+                                android:gravity="bottom"/>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp">
+                            <Spinner
+                                android:id="@+id/lsvalstatusofconst"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:entries="@array/Address">
+
+                            </Spinner>
+                            </android.support.v7.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <!--<TextView
+                                    android:id="@+id/tvExpDate"
+                                    android:layout_width="250dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/background"
+                                    android:text="Expected Date of Completion"/>-->
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="match_parent"
+                                    android:textColorHint="@color/background"
+                                    >
+                                    <EditText
+                                        android:id="@+id/etExpDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/background"
+                                        android:hint="Expected Date of Completion"
+                                        android:focusable="false"
+                                        android:editable="false"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                                <ImageView
+                                    android:id="@+id/calvalexcompletedate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:backgroundTint="@color/background"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="14dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="14dp"
+                                    android:background="@drawable/calendar1600">
+
+                                </ImageView>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+<!--
+                                <TextView
+                                    android:id="@+id/tvEvalDate"
+                                    android:layout_width="250dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/background"
+                                    android:text="Date of Valuation"/>-->
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="match_parent"
+                                    android:textColorHint="@color/background"
+                                    >
+
+                                    <EditText
+                                        android:id="@+id/etEvalDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/background"
+                                        android:hint="Date of Valuation"
+                                        android:focusable="false"
+                                        android:editable="false"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                                <ImageView
+                                    android:id="@+id/calvaldovaluation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:backgroundTint="@color/background"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="14dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="14dp"
+                                    android:background="@drawable/calendar1600">
+                                </ImageView>
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:text="Valuation For"
+                                android:textSize="12sp"
+                                android:textColor="@color/background"
+                                android:gravity="bottom"/>
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp">
+                            <Spinner
+                                android:id="@+id/lsvalfor"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:entries="@array/Address">
+
+                            </Spinner>
+                            </android.support.v7.widget.CardView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <!--<TextView
+                                    android:id="@+id/tvTurnAroundTime"
+                                    android:layout_width="250dp"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@color/background"
+                                    android:gravity="center_vertical"
+                                    android:text="Turn Around Time"/>-->
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="match_parent"
+                                    android:textColorHint="@color/background"
+                                    >
+
+                                    <EditText
+                                        android:id="@+id/etTurnAroundTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/background"
+                                        android:hint="Turn Around Time"
+                                        android:focusable="false"
+                                        android:editable="false"/>
+
+                                </android.support.design.widget.TextInputLayout>
+                                <ImageView
+                                    android:id="@+id/calvaltrunaround"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="14dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="14dp"
+                                    android:backgroundTint="@color/background"
+                                    android:background="@drawable/calendar1600">
+
+                                </ImageView>
+
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp"
+                                android:text="Sign Copy Received"
+                                android:textSize="12sp"
+                                android:textColor="@color/background"
+                                android:gravity="bottom"/>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:cardCornerRadius="4dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp">
+                            <Spinner
+                                android:id="@+id/lsvalsigncopy"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:entries="@array/Yesno">
+
+                            </Spinner>
+                            </android.support.v7.widget.CardView>
+
+
+
+
+
+                        </LinearLayout>
+
+                        </ScrollView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="116dp"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/unnamed" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"></View>
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/unnamed" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"></LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/bgcolor"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+
+        <Button
+            android:id="@+id/cbsave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.99"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:text="Save"
+            android:textColor="@color/bgcolor" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".05">
+
+        </View>
+
+        <Button
+            android:id="@+id/cbnext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.99"
+            android:elevation="5dp"
+            android:background="@drawable/border"
+            android:text="next"
+            android:textColor="@color/bgcolor" />
+
+    </LinearLayout>
+
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:baselineAligned="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/bottomnavigation"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        </include>
+
+    </LinearLayout>
+-->
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context="weapplify.tech.loandrivedemo.UI.EnterAddress"
+    android:weightSum="1">
+
+
+        <ScrollView
+            android:id="@+id/svAddress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".99"
+            android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/toolbar"></View>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="@color/bgcolor"></View>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lladdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/dashboardbg"
+                    android:elevation="15dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/background">
+
+                        <EditText
+                            android:id="@+id/etaddressline1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Address Line  1:"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/background">
+
+                        <EditText
+                            android:id="@+id/etaddressline2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Address Line 2:"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/background">
+
+                        <EditText
+                            android:id="@+id/etcity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="City:"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/background">
+
+                        <EditText
+                            android:id="@+id/etpincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Pincode:"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/background">
+
+                        <EditText
+                            android:id="@+id/etstate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="State:"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+
+        </FrameLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llbtnsavennext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/bgcolor"
+            android:elevation="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cbsave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:elevation="10dp"
+                android:text="Ok"
+                android:textColor="@color/bgcolor"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>

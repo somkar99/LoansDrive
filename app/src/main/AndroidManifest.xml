@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="weapplify.tech.loandrivedemo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/loansdrivelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/noActionbar">
+        <activity
+            android:name=".UI.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionbar" />
+        <activity
+            android:name=".UI.Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionbar" />
+        <activity
+            android:name=".UI.EmiCalculater"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Eligibility"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Splash"
+            android:theme="@style/noActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.LegalHome" />
+        <activity
+            android:name=".UI.Valuation"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".UI.Newassignment" />
+        <activity android:name=".UI.Completedrow" />
+        <activity android:name=".UI.PendingAssignment" />
+        <activity android:name=".UI.LoanApplication" />
+        <activity android:name=".UI.EnterAddress" />
+        <activity android:name=".UI.ApplicationPreview" />
+        <activity android:name=".UI.LoanApplicatioNumber"></activity>
+    </application>
+
+</manifest>
